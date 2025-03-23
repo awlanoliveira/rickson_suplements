@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',  sans-serif;
+}
+
+.center{
+    display: flex;
+    max-width: 1100px;
+    padding: 0 2%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+section {
+    background-color: black;
+}
+section.main{
+    min-height: 700px;
+    padding: 20px 0 80px 0; 
+}
+
+.menu {
+    display: flex; 
+    width: 100%;
+}
+
+.logo-menu{width: 50%;}
+
+.logo-menu img {
+    width: 320px;
+    padding: 10px;
+}
+
+
+.items-menu a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    margin-top: 20px;
+    
+}
+
+.mobile-menu a:hover {
+    border-bottom: 2px solid #ed0024;
+}
+
+.items-menu a:hover {
+    border-bottom: 1px solid #ed0024;
+}
+
+.items-menu a.contact-btn{
+    background-color: #ed0024;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.items-menu a.contact-btn:hover {
+    border: 0;
+}
+
+
+.mockup{ display: block;width: 100%; color: white; text-align: center; padding-top: 55px; background-color: black;}
+
+.mockup h1{
+    font-size: 40px;
+}
+
+.mockup img{max-width: 100%;}
+
+.red-text {
+    color: #ed0024;
+}
+
+.ativos {
+    display: flex;
+    justify-content: center; /* Garante alinhamento central */
+    gap: 20px; /* Espaçamento entre os cards */
+    flex-wrap: wrap; /* Permite quebra de linha se necessário */
+    width: 100%; /* Garante que ocupa toda a largura disponível */
+    max-width: 1100px; /* Mantém dentro do layout */
+    margin: 0 auto; /* Centraliza na tela */
+}
+
+.box-ativos{
+    width: 31%;
+    padding: 15px 20px;
+    background-color: white;
+    border-radius: 20px;
+    
+}
+
+.box-ativos h3{
+    font-size: 28px;
+    margin: px 0;
+    color: #ed0024;
+}
+
+.box-ativos p{
+    font-size: 13px;
+    color:black ;
+}
+
+section.cta{
+    background-image: url('/src/img/banner.svg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px 10px;
+    min-height: 200px;
+    text-align: center;
+    color: white;
+}
+
+.formula-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.formula-img {
+    max-width: 100%;
+    width: 1000px;
+    height: auto;
+    margin-top: 20px;
+}
+
+section.cta h2,
+section.cta h4 {
+    font-weight: bold;
+    margin: 10px 0;
+    padding-top: 20px;
+}
+
+section.cta h2 {
+    font-size: 30px;
+}
+
+section.cta h4 {
+    font-size: 18px;
+}
+
+
+.banner-produto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Ajuste para evitar espaços grandes desnecessários */
+    padding: 40px 0; /* Adiciona um espaçamento interno */
+    background-color: black;
+}
+
+.banner-termo {
+    max-width: 90%;
+    text-align: center;
+}
+
+.banner-termo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding-top: 23px;
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+    width: 300px; /* Ajuste o tamanho conforme necessário */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-btn {
+    margin-top: 10px;
+    padding: 12px 24px;
+    background-color: #ed0024;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    display: inline-block;
+    border: 2px solid #ed0024;
+}
+
+.whatsapp-btn:hover {
+    background-color: black;
+    color: #ed0024;
+}
+
+.social-media-buttons {
+    display: flex;
+    gap: 18px;
+}
+
+.social-media-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    background-color: #ed0024;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow .3s ease;
+}
+
+.social-media-buttons a:hover {
+    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: black;
+}
+
+#footer_items {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 8% 24px 8%;
+    align-items: center;
+    padding-top: 50px;
+}
+
+#copyright {
+    color: white;
+    font-weight: 500;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    color: white;
+    font-size: 28px;
+    position: absolute;
+    right: 20px;
+}
+
+/* Menu mobile */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    transition: 0.3s;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Links do menu mobile */
+.mobile-menu a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+/* Botão de fechar */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Visibilidade do menu mobile quando ativado */
+.mobile-menu.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+@media screen and (max-width:768px){
+    
+
+    .menu .items-menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+    .box-ativos{
+        width: 100%;
+        
+    }
+    #footer_items {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .formula-img {
+        width: 100%;
+    }
+
+    section.cta h2 {
+        font-size: 25px;
+    }
+
+    .mockup h1{
+        font-size: 35px;
+    }
+}
+
