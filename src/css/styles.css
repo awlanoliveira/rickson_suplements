@@ -317,9 +317,24 @@ footer {
     pointer-events: auto;
 }
 
+.mockup-mobile {
+    display: none;
+    width: 100%; color: white; text-align: center; padding-top: 55px; background-color: black;
+
+}
+
+.mockup-mobile h1{
+    font-size: 30px;
+}
 
 @media screen and (max-width:768px){
-    
+    .mockup-mobile {
+        display: block;
+    }
+
+    .mockup {
+        display: none;
+    }
 
     .menu .items-menu {
         display: none;
