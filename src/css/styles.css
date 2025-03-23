@@ -5,12 +5,14 @@
     font-family: 'poppins',  sans-serif;
 }
 
+
 .center{
     display: flex;
     max-width: 1100px;
     padding: 0 2%;
     margin: 0 auto;
     flex-wrap: wrap;
+    
 }
 
 section {
@@ -22,11 +24,23 @@ section.main{
 }
 
 .menu {
-    display: flex; 
+    display: flex;
+    justify-content: space-between; /* Garante que o menu fique espalhado com espaço entre logo e itens */
+    align-items: center;
     width: 100%;
+    height: 70px;
 }
 
-.logo-menu{width: 50%;}
+.logo-menu {
+    width: 50%;
+}
+
+.items-menu {
+    display: flex;
+    justify-content: flex-end; /* Move os itens para a direita */
+    width: 50%; /* Limita o espaço dos itens do menu para alinhar melhor */
+    
+}
 
 .logo-menu img {
     width: 320px;
@@ -40,8 +54,6 @@ section.main{
     text-decoration: none;
     display: inline-block;
     margin: 0 10px;
-    margin-top: 20px;
-    
 }
 
 .mobile-menu a:hover {
@@ -253,6 +265,7 @@ footer {
     font-size: 28px;
     position: absolute;
     right: 20px;
+    top: 32px;
 }
 
 /* Menu mobile */
@@ -262,7 +275,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: rgb(3, 3, 3);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -282,6 +295,10 @@ footer {
     padding: 10px 20px;
 }
 
+.mobile-menu a:hover {
+    color: #ed0024;
+}
+
 /* Botão de fechar */
 .close-btn {
     position: absolute;
@@ -291,6 +308,8 @@ footer {
     color: white;
     cursor: pointer;
 }
+
+
 
 /* Visibilidade do menu mobile quando ativado */
 .mobile-menu.active {
