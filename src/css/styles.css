@@ -141,6 +141,14 @@ section.cta{
     margin-top: 20px;
 }
 
+.descriptions-compras {
+display: block;width: 100%; color: white; text-align: center; padding-top: 55px; background-color: black;
+}
+
+.descriptions-compras h1 {
+    font-size: 40px;
+}
+
 section.cta h2,
 section.cta h4 {
     font-weight: bold;
@@ -320,11 +328,10 @@ footer {
 .mockup-mobile {
     display: none;
     width: 100%; color: white; text-align: center; padding-top: 55px; background-color: black;
-
 }
 
 .mockup-mobile h1{
-    font-size: 30px;
+    font-size: 34px;
 }
 
 @media screen and (max-width:768px){
@@ -332,7 +339,9 @@ footer {
         display: block;
     }
 
-
+    .descriptions-compras {
+        display: none;
+    }
 
     .menu .items-menu {
         display: none;
