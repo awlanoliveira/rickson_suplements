@@ -339,6 +339,10 @@ footer {
         display: block;
     }
 
+    .mockup-mobile h1 {
+        font-size: 29px;
+    }
+
     .descriptions-compras {
         display: none;
     }
